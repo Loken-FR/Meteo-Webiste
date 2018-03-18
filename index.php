@@ -18,17 +18,39 @@
 </head>
 <body>
 
-    <header>
-
+    <header class="header">
+        <div class="logo">
+            <h1>Meteo Direct</h1>
+        </div>
+        <div class="search-city">
+            <form action="#" method="GET">
+            <input type="text" value="" name="city">
+            <input type="submit">
+        </div>
+        <div class="geolocation">
+        </div>
+    </form>
     </header>
 
-    <section>
-
+    <section class="main">
+        <div class="menu-section">
+            <ul class="menu">
+                <li class="text"><a href="#">Accueil</a></li>
+                <li class="text"><a href="#">Prévisions</a></li>
+                <li class="text"><a href="#">Observations</a></li>
+            </ul>
+        </div>
+        <div class="contents-section">
+            <div class="header-contents">
+                <h2 class="title">Meteo France</h2>
+                <div class="text">Aujourd'hui</div>
+            </div>
+        </div>
     </section>
 
-    <footer>
+    <footer class="footer">
 
     </footer>
-
+    <script src="scripts/script.js" type="text/javascript"></script>
 </body>
 </html>
