@@ -1,0 +1,44 @@
+/*------------------------------------*\
+  #GENERAL
+\*------------------------------------*/
+
+body {
+    /* body occupied 80% of width window */
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+
+/*** FONTS ***/
+
+@font-face {
+    font-family: 'Adelle bold';
+    src: url(../fonts/Adelle_Bold.otf);
+}
+
+@font-face {
+    font-family: 'Adelle semi bold';
+    src: url(../fonts/Adelle_Semibold.otf);
+}
+
+@font-face {
+    font-family: 'Adelle';
+    src: url(../fonts/Adelle_Reg.otf);
+}
+
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.header {
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
+.header .logo h1 {
+    font-size: 60px;
+    font-family: 'Adelle bold';
+}
