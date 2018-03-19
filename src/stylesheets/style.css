@@ -7,8 +7,23 @@ body {
     width: 80%;
     height: 100%;
     margin: auto;
+    font-family: 'Adelle';
+    font-size: 16px;
 }
 
+h1 {
+    font-family: 'Adelle bold';
+}
+
+.input-text {
+    border : solid 1px grey;
+    margin-right: 5px;
+}
+
+.input-submit {
+    padding: 3px 3px 15px 3px;
+    border: solid 1px #000 ;
+}
 
 /*** FONTS ***/
 
@@ -33,12 +48,123 @@ body {
   #HEADER
 \*------------------------------------*/
 
-.header {
-    margin-top: 25px;
-    margin-bottom: 75px;
+/* ----------- Generals Screens (Laptop, Computer, Macbook, iMac----------- */
+
+@media only screen and (min-device-width: 1281px) {
+    .header {
+        margin-top: 25px;
+        margin-bottom: 80px;
+    }
+
+    .header .high-section {
+        margin-bottom: 50px;
+    }
+
+    .header .logo {
+        display: inline-block;
+    }
+
+    .header .logo h1 {
+        font-size: 52px;
+    }
+
+    .header .search-city {
+        display: inline-block;
+        margin-left: 150px;
+    }
 }
 
-.header .logo h1 {
-    font-size: 60px;
-    font-family: 'Adelle bold';
+
+
+/*** RESPONSIVE SECTION ***/
+
+/* ----------- Generals Smartphones ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 360px) and (max-device-width: 767px) {
+    .header {
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+
+    .header .high-section {
+        margin-bottom: 20px;
+    }
+
+    .header .logo h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .header .search-city {
+        margin-top: 15px;
+    }
+
+    .header .search-city .input-text{
+        width: 100px;
+    }
+
+    .header .search-city .input-submit{
+        width: 60px;
+        font-size: 14px;
+    }
+}
+
+/* ----------- Generals  Tablets ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 959px) {
+    .header {
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+
+    .header .high-section {
+        margin-bottom: 30px;
+    }
+
+    .header .logo {
+        display: inline-block;
+    }
+
+    .header .logo h1 {
+        font-size: 36px;
+    }
+
+    .header .search-city {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .header .search-city .input-text{
+        width: 120px;
+    }
+}
+
+
+/* ----------- Generals Larges Tablets ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 960px) and (max-device-width: 1280px) {
+    .header {
+        margin-top: 20px;
+        margin-bottom: 65px;
+    }
+
+    .header .high-section {
+        margin-bottom: 40px;
+    }
+
+    .header .logo {
+        display: inline-block;
+    }
+
+    .header .logo h1 {
+        font-size: 44px;
+    }
+
+    .header .search-city {
+        display: inline-block;
+        margin-left: 50px;
+    }
 }

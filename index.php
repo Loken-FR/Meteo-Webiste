@@ -20,8 +20,8 @@
             </div>
             <div class="search-city">
                 <form action="#" method="GET">
-                <input type="text" value="" name="city">
-                <input type="submit">
+                <input class="input-text" type="text" value="test" name="city">
+                <input class="input-submit" type="submit">
             </div>
             <div class="geolocation">
             </div>
