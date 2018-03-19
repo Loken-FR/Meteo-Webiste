@@ -29,9 +29,9 @@
         <!-- menu section -->
         <div class="menu-section">
             <ul class="menu">
-                <li class="text"><a href="#">Accueil</a></li>
-                <li class="text"><a href="#">Prévisions</a></li>
-                <li class="text"><a href="#">Observations</a></li>
+                <li class="text text-1"><a href="#">Accueil</a></li>
+                <li class="text text-2"><a href="#">Prévisions</a></li>
+                <li class="text text-3"><a href="#">Observations</a></li>
             </ul>
         </div>
     </form>
@@ -82,9 +82,9 @@
         <!-- footer menu -->
         <div class="menu-section">
             <ul class="menu">
-                <li class="text"><a href="#">A propos</a></li>
-                <li class="text"><a href="#">Contact</a></li>
-                <li class="text"><a href="#">Mentions légales</a></li>
+                <li class="text text-1"><a href="#">A propos</a></li>
+                <li class="text text-2"><a href="#">Contact</a></li>
+                <li class="text text-3"><a href="#">Mentions légales</a></li>
             </ul>
         </div>
     </footer>
