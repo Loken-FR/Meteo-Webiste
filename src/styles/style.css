@@ -571,9 +571,9 @@ a {
   #MAIN
 \*------------------------------------*/
 
-/* ----------- Generals Screens (Laptop, Computer, Macbook, iMac----------- */
+/* ----------- Generals  Larges Screens (Laptop, Computer, Macbook, iMac----------- */
 
-@media screen and (min-device-width: 1281px) {
+@media screen and (min-device-width: 1635px) {
     /* header contents */
     .main .header-contents .text-forecast {
         display: inline-block;
@@ -586,6 +586,116 @@ a {
         margin-left: 5px;
         margin-right: 5px;
     }
+    /* main contents */
+    .main .main-contents .city-forecast .left {
+        display: inline-block;
+        text-align: left;
+        margin-right: 50px;
+    }
+    .main .main-contents .city-forecast .city-name-forecast {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        font-family: 'Adelle semi bold';
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .main .main-contents .city-forecast .left .map-forecast {
+        width: 400px;
+        height: 300px;
+        background: red;
+    }
+    .main .main-contents .city-forecast .right {
+        position: relative;
+        top: 125px;
+        display: inline-block;
+        text-align: left;
+        margin-left: 50px;
+    }
+    .main .main-contents .city-forecast .day {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .main .main-contents .city-forecast .day .day-name {
+        text-align: center;
+        margin-bottom: 15px;
+        font-family: 'Adelle semi bold';
+        font-size: 26px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #000;
+    }
+    .main .main-contents .city-forecast .day .sky {
+        display: inline-block;
+        margin-right: 6px;
+        font-size: 22px;
+    }
+    .main .main-contents .city-forecast .day .temperature {
+        display: inline-block;
+        margin-bottom: 30px;
+        font-family: 'Univers';
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-device-width: 1281px) and (max-device-width: 1634px){
+    /* header contents */
+    .main .header-contents .text-forecast {
+        display: inline-block;
+        font-family: 'Adelle';
+        font-size: 34px;
+    }
+    .main .header-contents .separator-forecast {
+        display: inline-block;
+        font-size: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    /* main contents */
+    .main .main-contents .city-forecast .left {
+        margin: auto;
+    }
+    .main .main-contents .city-forecast .city-name-forecast {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        font-family: 'Adelle semi bold';
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .main .main-contents .city-forecast .left .map-forecast {
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        background: red;
+    }
+    .main .main-contents .city-forecast .right {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .main .main-contents .city-forecast .day {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .main .main-contents .city-forecast .day .day-name {
+        text-align: center;
+        margin-bottom: 15px;
+        font-family: 'Adelle semi bold';
+        font-size: 26px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #000;
+    }
+    .main .main-contents .city-forecast .day .sky {
+        display: inline-block;
+        margin-right: 6px;
+        font-size: 22px;
+    }
+    .main .main-contents .city-forecast .day .temperature {
+        display: inline-block;
+        margin-bottom: 30px;
+        font-family: 'Univers';
+        font-size: 22px;
+    }
 }
 
 /*** RESPONSIVE SECTION ***/
@@ -595,17 +705,58 @@ a {
 /* Portrait and Landscape */
 
 @media screen and (min-device-width: 360px) and (max-device-width: 767px) {
-        /* header contents  */
-        .main .header-contents .text-forecast {
-            display: inline-block;
-            font-family: 'Adelle';
-            font-size: 18px;
-            margin-top: 3px;
-        }
-    
-        .main .header-contents .separator-forecast {
-            display: none;
-        }
+    /* header contents  */
+    .main .header-contents .text-forecast {
+        display: inline-block;
+        font-family: 'Adelle';
+        font-size: 20px;
+        margin-top: 3px;
+    }
+    .main .header-contents .separator-forecast {
+        display: none;
+    }
+    /* main contents */
+    .main .main-contents .city-forecast .city-name-forecast {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-family: 'Adelle semi bold';
+        font-size: 23px;
+        font-weight: bold;
+    }
+    .main .main-contents .city-forecast .left .map-forecast {
+        margin: auto;
+        width: 275px;
+        height: 175px;
+        background: red;
+    }
+    .main .main-contents .city-forecast .right {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .main .main-contents .city-forecast .day {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .main .main-contents .city-forecast .day .day-name {
+        text-align: center;
+        margin-bottom: 15px;
+        font-family: 'Adelle semi bold';
+        font-size: 20px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #000;
+    }
+    .main .main-contents .city-forecast .day .sky {
+        display: inline-block;
+        margin-right: 6px;
+        font-size: 18px;
+    }
+    .main .main-contents .city-forecast .day .temperature {
+        display: inline-block;
+        margin-bottom: 30px;
+        font-family: 'Univers';
+        font-size: 18px;
+    }
 }
 
 /* ----------- Generals  Tablets ----------- */
@@ -617,17 +768,58 @@ a {
     .main .header-contents .text-forecast {
         display: inline-block;
         font-family: 'Adelle';
-        font-size: 28   px;
+        font-size: 28px;
         margin-top: 6px;
         margin-left: 24px;
     }
-
     .main .header-contents .separator-forecast {
         display: none;
     }
+    /* main contents */
+    .main .main-contents .city-forecast .city-name-forecast {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-family: 'Adelle semi bold';
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .main .main-contents .city-forecast .left .map-forecast {
+        margin: auto;
+        width: 325px;
+        height: 225px;
+        background: red;
+    }
+    .main .main-contents .city-forecast .right {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .main .main-contents .city-forecast .day {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .main .main-contents .city-forecast .day .day-name {
+        text-align: center;
+        margin-bottom: 15px;
+        font-family: 'Adelle semi bold';
+        font-size: 24px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #000;
+    }
+    .main .main-contents .city-forecast .day .sky {
+        display: inline-block;
+        margin-right: 6px;
+        font-size: 22px;
+    }
+    .main .main-contents .city-forecast .day .temperature {
+        display: inline-block;
+        margin-bottom: 30px;
+        font-family: 'Univers';
+        font-size: 22px;
+    }
 }
 
-/* ----------- Generals Larges Tablets ----------- */
+/* ----------- Generals Larges Tablets and Notebook ----------- */
 
 /* Portrait and Landscape */
 
@@ -638,11 +830,52 @@ a {
         font-family: 'Adelle';
         font-size: 30px;
     }
-
     .main .header-contents .separator-forecast {
         display: inline-block;
         font-size: 24px;
         margin-left: 3px;
         margin-right: 3px;
+    }
+    /* main contents */
+    .main .main-contents .city-forecast .city-name-forecast {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-family: 'Adelle semi bold';
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .main .main-contents .city-forecast .left .map-forecast {
+        margin: auto;
+        width: 400px;
+        height: 300px;
+        background: red;
+    }
+    .main .main-contents .city-forecast .right {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .main .main-contents .city-forecast .day {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    .main .main-contents .city-forecast .day .day-name {
+        text-align: center;
+        margin-bottom: 15px;
+        font-family: 'Adelle semi bold';
+        font-size: 26px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #000;
+    }
+    .main .main-contents .city-forecast .day .sky {
+        display: inline-block;
+        margin-right: 6px;
+        font-size: 22px;
+    }
+    .main .main-contents .city-forecast .day .temperature {
+        display: inline-block;
+        margin-bottom: 30px;
+        font-family: 'Univers';
+        font-size: 22px;
     }
 }
