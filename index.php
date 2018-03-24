@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- reset css -->
-    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/stylesheets/reset.css">
     <!-- main stylesheet -->
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/stylesheets/style.css">
     <title>Meteo Direct</title>
 </head>
 <body>
@@ -22,8 +22,6 @@
                 <form action="#" method="GET">
                 <input class="input-text" type="text" name="city">
                 <input class="input-submit" type="submit">
-            </div>
-            <div class="geolocation">
             </div>
         </div>
         <!-- menu section -->
@@ -50,7 +48,7 @@
             <div class="main-contents">
                 <div class="primary-city">
                     <div class="city city-1">
-                        <h3 class="city-name">Paris</h3>
+                        <a href=""><h3 class="city-name">Paris</h3></a>
                         <div class="map"></div>
                         <div class="meteo-section">
                             <div class="morning">
@@ -71,7 +69,7 @@
                         </div>
                     </div>
                     <div class="city city-2">
-                        <h3 class="city-name">Marseille</h3>
+                        <a href=""><h3 class="city-name">Marseille</h3></a>
                         <div class="map"></div>
                         <div class="meteo-section">
                             <div class="morning">
@@ -92,7 +90,7 @@
                         </div>
                     </div>
                     <div class="city city-3">
-                        <h3 class="city-name">Lyon</h3>
+                        <a href=""><h3 class="city-name">Lyon</h3></a>
                         <div class="map"></div>
                         <div class="meteo-section">
                             <div class="morning">
