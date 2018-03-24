@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- reset css -->
-    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/stylesheets/reset.css">
     <!-- main stylesheet -->
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/stylesheets/style.css">
     <title>Meteo Direct</title>
 </head>
 <body>
@@ -143,6 +143,72 @@
                                 <h4 class="day-name">Lundi</h4>
                                 <div class="sky">Nuageux</div>
                                 <div class="temperature">3°C</div>
+                            </div>
+                        </div>
+                        <div class="city-forecast-4">
+                            <div class="left">
+                                <a href=""><h3 class="city-name-forecast">Paris</h3></a>
+                                <div class="map-forecast"></div>
+                            </div>
+                            <div class="right">
+                                <div class="day-1 day">
+                                    <h4 class="day-name">Lundi</h4>
+                                    <div class="sky">Nuageux</div>
+                                    <div class="temperature">3°C</div>
+                                </div>
+                                <div class="day-2 day">
+                                    <h4 class="day-name">Lundi</h4>
+                                    <div class="sky">Nuageux</div>
+                                    <div class="temperature">3°C</div>
+                                </div>
+                                <div class="day-3 day">
+                                    <h4 class="day-name">Lundi</h4>
+                                    <div class="sky">Nuageux</div>
+                                    <div class="temperature">3°C</div>
+                                </div>
+                                <div class="day-4 day">
+                                    <h4 class="day-name">Lundi</h4>
+                                    <div class="sky">Nuageux</div>
+                                    <div class="temperature">3°C</div>
+                                </div>
+                                <div class="day-5 day">
+                                    <h4 class="day-name">Lundi</h4>
+                                    <div class="sky">Nuageux</div>
+                                    <div class="temperature">3°C</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city-forecast-5">
+                            <div class="left">
+                                <a href=""><h3 class="city-name-forecast">Paris</h3></a>
+                                <div class="map-forecast"></div>
+                            </div>
+                            <div class="right">
+                                <div class="day-1 day">
+                                    <h4 class="day-name">Lundi</h4>
+                                    <div class="sky">Nuageux</div>
+                                    <div class="temperature">3°C</div>
+                                </div>
+                                <div class="day-2 day">
+                                    <h4 class="day-name">Lundi</h4>
+                                    <div class="sky">Nuageux</div>
+                                    <div class="temperature">3°C</div>
+                                </div>
+                                <div class="day-3 day">
+                                    <h4 class="day-name">Lundi</h4>
+                                    <div class="sky">Nuageux</div>
+                                    <div class="temperature">3°C</div>
+                                </div>
+                                <div class="day-4 day">
+                                    <h4 class="day-name">Lundi</h4>
+                                    <div class="sky">Nuageux</div>
+                                    <div class="temperature">3°C</div>
+                                </div>
+                                <div class="day-5 day">
+                                    <h4 class="day-name">Lundi</h4>
+                                    <div class="sky">Nuageux</div>
+                                    <div class="temperature">3°C</div>
+                                </div>
                             </div>
                         </div>
                     </div>

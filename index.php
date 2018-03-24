@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- reset css -->
-    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/stylesheets/reset.css">
     <!-- main stylesheet -->
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/stylesheets/style.css">
     <title>Meteo Direct</title>
 </head>
 <body>
@@ -106,6 +106,48 @@
                             <div class="evening">
                                 <h4 class="time-day">Soir :</h4>
                                 <div class="sky">Eclaircie</div>
+                                <div class="temperature">2°C</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city city-4">
+                        <a href=""><h3 class="city-name">Paris</h3></a>
+                        <div class="map"></div>
+                        <div class="meteo-section">
+                            <div class="morning">
+                                <h4 class="time-day">Matin :</h4>
+                                <div class="sky">Nuageux</div>
+                                <div class="temperature">3°C</div>
+                            </div>
+                            <div class="afternoon">
+                                <h4 class="time-day">Après midi :</h4>
+                                <div class="sky">Nuageux</div>
+                                <div class="temperature">9°C</div>
+                            </div>
+                            <div class="evening">
+                                <h4 class="time-day">Soir :</h4>
+                                <div class="sky">Pluvieux</div>
+                                <div class="temperature">2°C</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="city city-5">
+                        <a href=""><h3 class="city-name">Paris</h3></a>
+                        <div class="map"></div>
+                        <div class="meteo-section">
+                            <div class="morning">
+                                <h4 class="time-day">Matin :</h4>
+                                <div class="sky">Nuageux</div>
+                                <div class="temperature">3°C</div>
+                            </div>
+                            <div class="afternoon">
+                                <h4 class="time-day">Après midi :</h4>
+                                <div class="sky">Nuageux</div>
+                                <div class="temperature">9°C</div>
+                            </div>
+                            <div class="evening">
+                                <h4 class="time-day">Soir :</h4>
+                                <div class="sky">Pluvieux</div>
                                 <div class="temperature">2°C</div>
                             </div>
                         </div>
