@@ -77,6 +77,8 @@ a {
     }
 }
 
+/*---------  INDEX.PHP (other pages can use the same selectors of this page ----------*/
+
 /*------------------------------------*\
   #HEADER
 \*------------------------------------*/
@@ -149,7 +151,6 @@ a {
     .header .menu-section {
         text-align: center;
     }
-
     .header .menu-section .menu .text {
         display: inline-block;
         font-family: 'Adelle semi bold';
@@ -270,7 +271,6 @@ a {
     .main .contents-section .main-contents {
         text-align: center;
     }
-
     .main .contents-section .main-contents .city-name {
         font-size: 36px;
         font-weight: bold;
@@ -327,7 +327,6 @@ a {
         padding-bottom: 3px;
         border-bottom: 1px solid #000;
     }
-
     .main .contents-section .header-contents .title {
         display: inline-block;
         font-family: 'Adelle semi bold';
@@ -391,7 +390,6 @@ a {
         padding-bottom: 3px;
         border-bottom: 1px solid #000;
     }
-
     .main .contents-section .header-contents .title {
         display: inline-block;
         font-family: 'Adelle semi bold';
@@ -412,7 +410,6 @@ a {
     .main .contents-section .main-contents {
         text-align: center;
     }
-
     .main .contents-section .main-contents .city-name {
         font-size: 30px;
         font-weight: bold;
@@ -468,7 +465,6 @@ a {
         margin-bottom: 35px;
         border-bottom: 1px solid #000;
     }
-
     .main .contents-section .header-contents .title {
         display: inline-block;
         font-family: 'Adelle semi bold';
@@ -489,7 +485,6 @@ a {
     .main .contents-section .main-contents {
         text-align: center;
     }
-
     .main .contents-section .main-contents .city-name {
         font-size: 36px;
         font-weight: bold;
@@ -567,5 +562,87 @@ a {
     .footer .menu-section .menu .text {
         width: 100%;
         margin-bottom: 12px;
+    }
+}
+
+/*---------  PREVESIONS.PHP  ----------*/
+
+/*------------------------------------*\
+  #MAIN
+\*------------------------------------*/
+
+/* ----------- Generals Screens (Laptop, Computer, Macbook, iMac----------- */
+
+@media screen and (min-device-width: 1281px) {
+    /* header contents */
+    .main .header-contents .text-forecast {
+        display: inline-block;
+        font-family: 'Adelle';
+        font-size: 34px;
+    }
+    .main .header-contents .separator-forecast {
+        display: inline-block;
+        font-size: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+/*** RESPONSIVE SECTION ***/
+
+/* ----------- Generals Smartphones ----------- */
+
+/* Portrait and Landscape */
+
+@media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+        /* header contents  */
+        .main .header-contents .text-forecast {
+            display: inline-block;
+            font-family: 'Adelle';
+            font-size: 18px;
+            margin-top: 3px;
+        }
+    
+        .main .header-contents .separator-forecast {
+            display: none;
+        }
+}
+
+/* ----------- Generals  Tablets ----------- */
+
+/* Portrait and Landscape */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 959px) {
+    /* header contents  */
+    .main .header-contents .text-forecast {
+        display: inline-block;
+        font-family: 'Adelle';
+        font-size: 28   px;
+        margin-top: 6px;
+        margin-left: 24px;
+    }
+
+    .main .header-contents .separator-forecast {
+        display: none;
+    }
+}
+
+/* ----------- Generals Larges Tablets ----------- */
+
+/* Portrait and Landscape */
+
+@media screen and (min-device-width: 960px) and (max-device-width: 1280px) {
+    /* header contents  */
+    .main .header-contents .text-forecast {
+        display: inline-block;
+        font-family: 'Adelle';
+        font-size: 30px;
+    }
+
+    .main .header-contents .separator-forecast {
+        display: inline-block;
+        font-size: 24px;
+        margin-left: 3px;
+        margin-right: 3px;
     }
 }

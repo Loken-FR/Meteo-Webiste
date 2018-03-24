@@ -41,8 +41,8 @@
             <!-- header contents -->
             <div class="header-contents">
                 <h2 class="title">METEO FRANCE</h2>
-                <div class="separator">-</div>
-                <div class="text">Aujourd'hui</div>
+                <div class="separator-forecast">-</div>
+                <div class="text-forecast">Previsions 5 prochains jours</div>
             </div>
             <!-- main contents -->
             <div class="main-contents">
