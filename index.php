@@ -11,10 +11,18 @@ include 'includes/datas.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/favicon/site.webmanifest">
+    <link rel="mask-icon" href="src/favicon/safari-pinned-tab.svg" color="#5e7278">
+    <meta name="msapplication-TileColor" content="#eeeeee">
+    <meta name="theme-color" content="#ffffff">
     <!-- reset css -->
-    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/css/reset.css">
     <!-- main stylesheet -->
-    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Direct Weather</title>
 </head>
 <body>
@@ -26,9 +34,9 @@ include 'includes/datas.php';
                 <a href="index.php"><h1>Direct Weather</h1></a>
             </div>
             <div class="search-city">
-                <form action="#" method="GET">
-                <input class="input-text" type="text" value="<?= $city; ?>" name="city">
-                <input class="input-submit" type="submit" value="Validate">
+                <form action="city.php" method="GET">
+                <input class="input-text" type="text"  name="city" value="City">
+                <a href="city.php"><input class="input-submit" type="submit" value="Validate"></a>
             </div>
         </div>
         <!-- menu section -->
@@ -56,7 +64,7 @@ include 'includes/datas.php';
                 <div class="primary-city">
                     <div class="city city-1">
                         <a href=""><h3 class="city-name"><?= $primary_city['a']; ?></h3></a>
-                        <div class="map"></div>
+                        <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?center=<?= $paris_forecast->{'city'}->{'coord'}->{'lat'} ?>,<?= $paris_forecast->{'city'}->{'coord'}->{'lon'} ?>&markers=<?= $paris_forecast->{'city'}->{'coord'}->{'lat'} ?>,<?= $paris_forecast->{'city'}->{'coord'}->{'lon'} ?>&zoom=12&size=500x400&key=AIzaSyAlXR7vVCbfzv0XHHHLO2ecZzY59-6P_mc">
                         <div class="meteo-section">
                             <div class="morning">
                                 <h4 class="time-day">Weather :</h4>
@@ -77,7 +85,7 @@ include 'includes/datas.php';
                     </div>
                     <div class="city city-2">
                         <a href=""><h3 class="city-name"><?= $primary_city['b']; ?></h3></a>
-                        <div class="map"></div>
+                        <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?center=<?= $marseille_forecast->{'city'}->{'coord'}->{'lat'} ?>,<?= $marseille_forecast->{'city'}->{'coord'}->{'lon'} ?>&markers=<?= $marseille_forecast->{'city'}->{'coord'}->{'lat'} ?>,<?= $marseille_forecast->{'city'}->{'coord'}->{'lon'} ?>&zoom=12&size=500x400&key=AIzaSyAlXR7vVCbfzv0XHHHLO2ecZzY59-6P_mc">
                         <div class="meteo-section">
                             <div class="morning">
                                 <h4 class="time-day">Weather :</h4>
@@ -98,7 +106,7 @@ include 'includes/datas.php';
                     </div>
                     <div class="city city-3">
                         <a href=""><h3 class="city-name"><?= $primary_city['c']; ?></h3></a>
-                        <div class="map"></div>
+                        <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?center=<?= $lyon_forecast->{'city'}->{'coord'}->{'lat'} ?>,<?= $lyon_forecast->{'city'}->{'coord'}->{'lon'} ?>&markers=<?= $lyon_forecast->{'city'}->{'coord'}->{'lat'} ?>,<?= $lyon_forecast->{'city'}->{'coord'}->{'lon'} ?>&zoom=12&size=500x400&key=AIzaSyAlXR7vVCbfzv0XHHHLO2ecZzY59-6P_mc">
                         <div class="meteo-section">
                             <div class="morning">
                                 <h4 class="time-day">Weather :</h4>
@@ -119,7 +127,7 @@ include 'includes/datas.php';
                     </div>
                     <div class="city city-4">
                         <a href=""><h3 class="city-name"><?= $primary_city['d']; ?></h3></a>
-                        <div class="map"></div>
+                        <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?center=<?= $nantes_forecast->{'city'}->{'coord'}->{'lat'} ?>,<?= $nantes_forecast->{'city'}->{'coord'}->{'lon'} ?>&markers=<?= $nantes_forecast->{'city'}->{'coord'}->{'lat'} ?>,<?= $nantes_forecast->{'city'}->{'coord'}->{'lon'} ?>&zoom=12&size=500x400&key=AIzaSyAlXR7vVCbfzv0XHHHLO2ecZzY59-6P_mc">
                         <div class="meteo-section">
                             <div class="morning">
                                 <h4 class="time-day">Weather :</h4>
@@ -140,7 +148,7 @@ include 'includes/datas.php';
                     </div>
                     <div class="city city-5">
                         <a href=""><h3 class="city-name"><?= $primary_city['e']; ?></h3></a>
-                        <div class="map"></div>
+                        <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?center=<?= $toulouse_forecast->{'city'}->{'coord'}->{'lat'} ?>,<?= $toulouse_forecast->{'city'}->{'coord'}->{'lon'} ?>&markers=<?= $toulouse_forecast->{'city'}->{'coord'}->{'lat'} ?>,<?= $toulouse_forecast->{'city'}->{'coord'}->{'lon'} ?>&zoom=12&size=500x400&key=AIzaSyAlXR7vVCbfzv0XHHHLO2ecZzY59-6P_mc">
                         <div class="meteo-section">
                             <div class="morning">
                                 <h4 class="time-day">Weather :</h4>

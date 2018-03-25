@@ -3,10 +3,18 @@
 // VARIABLES
 // FOR DATAS VARIABLES, GO TO DATAS.PHP FILE !
 
-    // INPUT SEARCH CITY
+    // INPUT SEARCH CITY - city.php
     $city = !empty($_GET['city']) ? $_GET['city'] : 'Paris';
-    $url = 'http://api.openweathermap.org/data/2.5/forecast?q='.$city.'&units=metric&appid=515e5cf11aebbe79b6a12ed0ede7f344';
 
+    // URL OWM
+
+        // WEATHER NOW
+        $url_2 = 'http://api.openweathermap.org/data/2.5/weather?q='.$city.'&units=metric&APPID=515e5cf11aebbe79b6a12ed0ede7f344';
+        
+        // FORECAST
+        $url = 'http://api.openweathermap.org/data/2.5/forecast?q='.$city.'&units=metric&appid=515e5cf11aebbe79b6a12ed0ede7f344';
+
+    // FIVE PRIMARY FRENCH CITY USED IN HOME AND FORECASTS PAGE
     $primary_city = [
         'a' => 'Paris',
         'b' => 'Marseille',
@@ -15,7 +23,7 @@
         'e' => 'Toulouse'
     ];
 
-     // ACTUAL METEO IN PRIMARY FRENCH CITY
+     // ACTUAL METEO IN PRIMARY FRENCH CITY - index.php
     $primary_city_weather = [
         'Paris' => 'http://api.openweathermap.org/data/2.5/weather?q=Paris&units=metric&APPID=515e5cf11aebbe79b6a12ed0ede7f344',
         'Marseille' => 'http://api.openweathermap.org/data/2.5/weather?q=Marseille&units=metric&APPID=515e5cf11aebbe79b6a12ed0ede7f344',
@@ -24,7 +32,7 @@
         'Toulouse' => 'http://api.openweathermap.org/data/2.5/weather?q=Toulouse&units=metric&APPID=515e5cf11aebbe79b6a12ed0ede7f344'
     ];
 
-    //  FORECAST METEO IN PRIMARY FRENCH CITY
+    //  FORECAST METEO IN PRIMARY FRENCH CITY - forecasts.php
     $primary_city_forecast = [
         'Paris' => 'http://api.openweathermap.org/data/2.5/forecast?q=Paris&units=metric&APPID=515e5cf11aebbe79b6a12ed0ede7f344',
         'Marseille' => 'http://api.openweathermap.org/data/2.5/forecast?q=Marseille&units=metric&APPID=515e5cf11aebbe79b6a12ed0ede7f344',
