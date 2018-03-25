@@ -1,3 +1,11 @@
+<?php
+
+include 'includes/variables.php';
+include 'includes/caches.php';
+include 'includes/datas.php';
+include 'includes/translate.php';
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -20,7 +28,7 @@
             </div>
             <div class="search-city">
                 <form action="#" method="GET">
-                <input class="input-text" type="text" name="city">
+                <input class="input-text" type="text" value="<?= $city; ?>" name="city">
                 <input class="input-submit" type="submit">
             </div>
         </div>
@@ -48,15 +56,15 @@
             <div class="main-contents">
                 <div class="primary-city">
                     <div class="city city-1">
-                        <a href=""><h3 class="city-name">Paris</h3></a>
+                        <a href=""><h3 class="city-name"><?= $primary_city['a']; ?></h3></a>
                         <div class="map"></div>
                         <div class="meteo-section">
                             <div class="morning">
-                                <h4 class="time-day">Matin :</h4>
-                                <div class="sky">Nuageux</div>
-                                <div class="temperature">3°C</div>
+                                <h4 class="time-day">Meteo :</h4>
+                                <div class="sky"><?= $paris_sky; ?></div>
+                                <div class="temperature"><?= $paris_temp; ?>°C</div>
                             </div>
-                            <div class="afternoon">
+                            <!-- <div class="afternoon">
                                 <h4 class="time-day">Après midi :</h4>
                                 <div class="sky">Nuageux</div>
                                 <div class="temperature">9°C</div>
@@ -65,19 +73,19 @@
                                 <h4 class="time-day">Soir :</h4>
                                 <div class="sky">Pluvieux</div>
                                 <div class="temperature">2°C</div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="city city-2">
-                        <a href=""><h3 class="city-name">Marseille</h3></a>
+                        <a href=""><h3 class="city-name"><?= $primary_city['b']; ?></h3></a>
                         <div class="map"></div>
                         <div class="meteo-section">
                             <div class="morning">
-                                <h4 class="time-day">Matin :</h4>
+                                <h4 class="time-day">Meteo :</h4>
                                 <div class="sky">Ensoleillé</div>
-                                <div class="temperature">7°C</div>
+                                <div class="temperature"><?= $marseille_temp; ?>°C</div>
                             </div>
-                            <div class="afternoon">
+                            <!-- <div class="afternoon">
                                 <h4 class="time-day">Après midi :</h4>
                                 <div class="sky">Ensoleillé</div>
                                 <div class="temperature">15°C</div>
@@ -86,19 +94,19 @@
                                 <h4 class="time-day">Soir :</h4>
                                 <div class="sky">Eclaircie</div>
                                 <div class="temperature">6°C</div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="city city-3">
-                        <a href=""><h3 class="city-name">Lyon</h3></a>
+                        <a href=""><h3 class="city-name"><?= $primary_city['c']; ?></h3></a>
                         <div class="map"></div>
                         <div class="meteo-section">
                             <div class="morning">
-                                <h4 class="time-day">Matin :</h4>
+                                <h4 class="time-day">Meteo :</h4>
                                 <div class="sky">Nuageux</div>
-                                <div class="temperature">4°C</div>
+                                <div class="temperature"><?= $lyon_temp; ?>°C</div>
                             </div>
-                            <div class="afternoon">
+                            <!-- <div class="afternoon">
                                 <h4 class="time-day">Après midi :</h4>
                                 <div class="sky">Ensoleillé</div>
                                 <div class="temperature">10°C</div>
@@ -107,19 +115,19 @@
                                 <h4 class="time-day">Soir :</h4>
                                 <div class="sky">Eclaircie</div>
                                 <div class="temperature">2°C</div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="city city-4">
-                        <a href=""><h3 class="city-name">Paris</h3></a>
+                        <a href=""><h3 class="city-name"><?= $primary_city['d']; ?></h3></a>
                         <div class="map"></div>
                         <div class="meteo-section">
                             <div class="morning">
-                                <h4 class="time-day">Matin :</h4>
+                                <h4 class="time-day">Meteo :</h4>
                                 <div class="sky">Nuageux</div>
-                                <div class="temperature">3°C</div>
+                                <div class="temperature"><?= $nantes_temp; ?>°C</div>
                             </div>
-                            <div class="afternoon">
+                            <!-- <div class="afternoon">
                                 <h4 class="time-day">Après midi :</h4>
                                 <div class="sky">Nuageux</div>
                                 <div class="temperature">9°C</div>
@@ -128,19 +136,19 @@
                                 <h4 class="time-day">Soir :</h4>
                                 <div class="sky">Pluvieux</div>
                                 <div class="temperature">2°C</div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="city city-5">
-                        <a href=""><h3 class="city-name">Paris</h3></a>
+                        <a href=""><h3 class="city-name"><?= $primary_city['e']; ?></h3></a>
                         <div class="map"></div>
                         <div class="meteo-section">
                             <div class="morning">
-                                <h4 class="time-day">Matin :</h4>
+                                <h4 class="time-day">Meteo :</h4>
                                 <div class="sky">Nuageux</div>
-                                <div class="temperature">3°C</div>
+                                <div class="temperature"><?= $toulouse_temp; ?>°C</div>
                             </div>
-                            <div class="afternoon">
+                            <!-- <div class="afternoon">
                                 <h4 class="time-day">Après midi :</h4>
                                 <div class="sky">Nuageux</div>
                                 <div class="temperature">9°C</div>
@@ -149,7 +157,7 @@
                                 <h4 class="time-day">Soir :</h4>
                                 <div class="sky">Pluvieux</div>
                                 <div class="temperature">2°C</div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
