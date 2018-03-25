@@ -279,26 +279,23 @@ a {
         margin-bottom: 20px;
     }
     .main .contents-section .main-contents .map {
-        display: inline-block;
-        margin-bottom: 50px;
+        margin: auto auto 30px auto;
         width: 500px;
         height: 400px;
         background: red;
     }
     .main .contents-section .main-contents .meteo-section {
-        position: relative;
-        bottom: 125px;
-        display: inline-block;
         margin-top: 15px;
-        margin-left: 75px;
+        margin-bottom: 60px;
     }
     .main .contents-section .main-contents .meteo-section .time-day {
         text-align: center;
         font-size: 28px;
         font-weight: bold;
-        margin-bottom: 15px;
         padding-bottom: 1px;
         border-bottom: 0.5px solid #000;
+        width: 140px;
+        margin: auto auto 20px auto;   
     }
     .main .contents-section .main-contents .meteo-section .sky {
         display: inline-block;
@@ -426,24 +423,22 @@ a {
         margin-bottom: 15px;
     }
     .main .contents-section .main-contents .map {
-        display: inline-block;
-        margin-bottom: 15px;
+        margin: auto auto 20px auto;
         width: 350px;
         height: 250px;
         background: red;
     }
     .main .contents-section .main-contents .meteo-section {
-        position: relative;
-        bottom: 22px;
         display: inline-block;
         margin-top: 10px;
-        margin-left: 35px;
+        margin-bottom: 40px;
     }
     .main .contents-section .main-contents .meteo-section .time-day {
         text-align: center;
         font-size: 22px;
         font-weight: bold;
-        margin-bottom: 15px;
+        width: 100px;
+        margin:auto auto 15px auto;
         padding-bottom: 1px;
         border-bottom: 0.5px solid #000;
     }
@@ -502,24 +497,20 @@ a {
         margin-bottom: 20px;
     }
     .main .contents-section .main-contents .map {
-        display: inline-block;
-        margin-bottom: 50px;
+        margin: auto auto 50px auto;
         width: 425px;
         height: 325px;
         background: red;
     }
     .main .contents-section .main-contents .meteo-section {
-        position: relative;
-        bottom: 82px;
-        display: inline-block;
         margin-top: 15px;
-        margin-left: 60px;
+        margin-bottom: 50px;
     }
     .main .contents-section .main-contents .meteo-section .time-day {
-        text-align: center;
+        width: 120px;
+        margin:auto auto 15px auto;
         font-size: 28px;
         font-weight: bold;
-        margin-bottom: 15px;
         padding-bottom: 1px;
         border-bottom: 0.5px solid #000;
     }
@@ -583,7 +574,7 @@ a {
 
 /* ----------- Generals  Larges Screens (Laptop, Computer, Macbook, iMac----------- */
 
-@media screen and (min-device-width: 1635px) {
+@media screen and (min-device-width: 1281px) {
     /* header contents */
     .main .header-contents .text-forecast {
         display: inline-block;
@@ -598,9 +589,7 @@ a {
     }
     /* main contents */
     .main .main-contents .city-forecast .left {
-        display: inline-block;
-        text-align: left;
-        margin-right: 50px;
+        margin-bottom: 40px;
     }
     .main .main-contents .city-forecast .city-name-forecast {
         text-align: center;
@@ -611,85 +600,21 @@ a {
         font-weight: bold;
     }
     .main .main-contents .city-forecast .left .map-forecast {
+        margin: auto;
         width: 400px;
         height: 300px;
         background: red;
     }
     .main .main-contents .city-forecast .right {
-        position: relative;
-        top: 125px;
-        display: inline-block;
-        text-align: left;
-        margin-left: 50px;
+        margin-bottom: 60px;
     }
     .main .main-contents .city-forecast .day {
         display: inline-block;
-        margin-left: 20px;
+        margin-left: 35px;
     }
     .main .main-contents .city-forecast .day .day-name {
-        text-align: center;
-        margin-bottom: 15px;
-        font-size: 26px;
-        font-weight: bold;
-        padding-bottom: 1px;
-        border-bottom: 1px solid #000;
-    }
-    .main .main-contents .city-forecast .day .sky {
-        display: inline-block;
-        margin-right: 6px;
-        font-size: 22px;
-    }
-    .main .main-contents .city-forecast .day .temperature {
-        display: inline-block;
-        margin-bottom: 30px;
-        font-family: 'Univers';
-        font-size: 22px;
-    }
-}
-
-@media screen and (min-device-width: 1281px) and (max-device-width: 1634px) {
-    /* header contents */
-    .main .header-contents .text-forecast {
-        display: inline-block;
-        font-family: 'Adelle';
-        font-size: 34px;
-    }
-    .main .header-contents .separator-forecast {
-        display: inline-block;
-        font-size: 30px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    /* main contents */
-    .main .main-contents .city-forecast .left {
-        margin: auto;
-    }
-    .main .main-contents .city-forecast .city-name-forecast {
-        text-align: center;
-        margin-top: 0px;
-        margin-bottom: 15px;
-        font-family: 'Adelle semi bold';
-        font-size: 30px;
-        font-weight: bold;
-    }
-    .main .main-contents .city-forecast .left .map-forecast {
-        width: 400px;
-        height: 300px;
-        margin: auto;
-        background: red;
-    }
-    .main .main-contents .city-forecast .right {
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }
-    .main .main-contents .city-forecast .day {
-        display: inline-block;
-        margin-left: 20px;
-    }
-    .main .main-contents .city-forecast .day .day-name {
-        text-align: center;
-        margin-bottom: 15px;
+        width: 120px;
+        margin: auto auto 15px auto;
         font-size: 26px;
         font-weight: bold;
         padding-bottom: 1px;
@@ -731,7 +656,7 @@ a {
         margin-top: 30px;
         margin-bottom: 15px;
         font-family: 'Adelle semi bold';
-        font-size: 23px;
+        font-size: 24px;
         font-weight: bold;
     }
     .main .main-contents .city-forecast .left .map-forecast {
@@ -745,12 +670,11 @@ a {
         margin-top: 40px;
     }
     .main .main-contents .city-forecast .day {
-        display: inline-block;
-        margin-left: 20px;
+        display: block;
     }
     .main .main-contents .city-forecast .day .day-name {
-        text-align: center;
-        margin-bottom: 15px;
+        width: 90px;
+        margin: auto auto 15px auto;
         font-size: 20px;
         font-weight: bold;
         padding-bottom: 1px;
@@ -806,11 +730,11 @@ a {
     }
     .main .main-contents .city-forecast .day {
         display: inline-block;
-        margin-left: 20px;
+        margin-left: 35px;
     }
     .main .main-contents .city-forecast .day .day-name {
-        text-align: center;
-        margin-bottom: 15px;
+        width: 120px;
+        margin: auto auto 15px auto;
         font-size: 24px;
         font-weight: bold;
         padding-bottom: 1px;
@@ -867,11 +791,11 @@ a {
     }
     .main .main-contents .city-forecast .day {
         display: inline-block;
-        margin-left: 20px;
+        margin-left: 35px;
     }
     .main .main-contents .city-forecast .day .day-name {
-        text-align: center;
-        margin-bottom: 15px;
+        width: 120px;
+        margin: auto auto 15px auto;
         font-size: 26px;
         font-weight: bold;
         padding-bottom: 1px;

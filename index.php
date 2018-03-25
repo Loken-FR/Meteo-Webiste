@@ -3,20 +3,19 @@
 include 'includes/variables.php';
 include 'includes/caches.php';
 include 'includes/datas.php';
-include 'includes/translate.php';
 
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- reset css -->
-    <link rel="stylesheet" href="src/stylesheets/reset.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
     <!-- main stylesheet -->
-    <link rel="stylesheet" href="src/stylesheets/style.css">
-    <title>Meteo Direct</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>Direct Weather</title>
 </head>
 <body>
     <!-- header -->
@@ -24,20 +23,20 @@ include 'includes/translate.php';
         <!-- search section  -->
         <div class="high-section">
             <div class="logo">
-                <a href="index.php"><h1>Meteo Direct</h1></a>
+                <a href="index.php"><h1>Direct Weather</h1></a>
             </div>
             <div class="search-city">
                 <form action="#" method="GET">
                 <input class="input-text" type="text" value="<?= $city; ?>" name="city">
-                <input class="input-submit" type="submit">
+                <input class="input-submit" type="submit" value="Validate">
             </div>
         </div>
         <!-- menu section -->
         <div class="menu-section">
             <ul class="menu">
-                <li class="text text-1"><a href="index.php">Accueil</a></li>
-                <li class="text text-2"><a href="previsions.php">Prévisions</a></li>
-                <li class="text text-3"><a href="#">Actualités</a></li>
+                <li class="text text-1"><a href="index.php">Home</a></li>
+                <li class="text text-2"><a href="forecasts.php">Forecasts</a></li>
+                <li class="text text-3"><a href="#">Actuality</a></li>
             </ul>
         </div>
     </form>
@@ -50,7 +49,7 @@ include 'includes/translate.php';
             <div class="header-contents">
                 <h2 class="title">METEO FRANCE</h2>
                 <div class="separator">-</div>
-                <div class="text">Aujourd'hui</div>
+                <div class="text">Today</div>
             </div>
             <!-- main contents -->
             <div class="main-contents">
@@ -60,7 +59,7 @@ include 'includes/translate.php';
                         <div class="map"></div>
                         <div class="meteo-section">
                             <div class="morning">
-                                <h4 class="time-day">Meteo :</h4>
+                                <h4 class="time-day">Weather :</h4>
                                 <div class="sky"><?= $paris_sky; ?></div>
                                 <div class="temperature"><?= $paris_temp; ?>°C</div>
                             </div>
@@ -81,8 +80,8 @@ include 'includes/translate.php';
                         <div class="map"></div>
                         <div class="meteo-section">
                             <div class="morning">
-                                <h4 class="time-day">Meteo :</h4>
-                                <div class="sky">Ensoleillé</div>
+                                <h4 class="time-day">Weather :</h4>
+                                <div class="sky"><?= $marseille_sky; ?></div>
                                 <div class="temperature"><?= $marseille_temp; ?>°C</div>
                             </div>
                             <!-- <div class="afternoon">
@@ -102,8 +101,8 @@ include 'includes/translate.php';
                         <div class="map"></div>
                         <div class="meteo-section">
                             <div class="morning">
-                                <h4 class="time-day">Meteo :</h4>
-                                <div class="sky">Nuageux</div>
+                                <h4 class="time-day">Weather :</h4>
+                                <div class="sky"><?= $lyon_sky; ?></div>
                                 <div class="temperature"><?= $lyon_temp; ?>°C</div>
                             </div>
                             <!-- <div class="afternoon">
@@ -123,8 +122,8 @@ include 'includes/translate.php';
                         <div class="map"></div>
                         <div class="meteo-section">
                             <div class="morning">
-                                <h4 class="time-day">Meteo :</h4>
-                                <div class="sky">Nuageux</div>
+                                <h4 class="time-day">Weather :</h4>
+                                <div class="sky"><?= $nantes_sky; ?></div>
                                 <div class="temperature"><?= $nantes_temp; ?>°C</div>
                             </div>
                             <!-- <div class="afternoon">
@@ -144,8 +143,8 @@ include 'includes/translate.php';
                         <div class="map"></div>
                         <div class="meteo-section">
                             <div class="morning">
-                                <h4 class="time-day">Meteo :</h4>
-                                <div class="sky">Nuageux</div>
+                                <h4 class="time-day">Weather :</h4>
+                                <div class="sky"><?= $toulouse_sky; ?></div>
                                 <div class="temperature"><?= $toulouse_temp; ?>°C</div>
                             </div>
                             <!-- <div class="afternoon">
@@ -169,9 +168,9 @@ include 'includes/translate.php';
         <!-- footer menu -->
         <div class="menu-section">
             <ul class="menu">
-                <li class="text text-1"><a href="#">A propos</a></li>
-                <li class="text text-2"><a href="#">Nous Contacter</a></li>
-                <li class="text text-3"><a href="#">Mentions légales</a></li>
+                <li class="text text-1"><a href="#">About</a></li>
+                <li class="text text-2"><a href="#">Contact us</a></li>
+                <li class="text text-3"><a href="#">Legal notice</a></li>
             </ul>
         </div>
     </footer>
